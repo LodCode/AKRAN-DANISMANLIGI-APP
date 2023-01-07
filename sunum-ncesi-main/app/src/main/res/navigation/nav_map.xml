@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_map"
+    app:startDestination="@id/anaMenu1">
+
+    <fragment
+        android:id="@+id/anaMenu1"
+        android:name="com.kaan.firebasechat.AKRANIM.AnaMenu1"
+        android:label="fragment_ana_menu1"
+        tools:layout="@layout/fragment_ana_menu1" >
+        <action
+            android:id="@+id/action_anaMenu1_to_anaMenu2"
+            app:destination="@id/anaMenu2" />
+        <action
+            android:id="@+id/action_anaMenu1_to_yeditepeHarita"
+            app:destination="@id/yeditepeHarita" />
+        <action
+            android:id="@+id/action_anaMenu1_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_anaMenu1_to_takvim"
+            app:destination="@id/takvim" />
+        <action
+            android:id="@+id/action_anaMenu1_to_kulup_Testin_oldugu_ekran"
+            app:destination="@id/kulup_Testin_oldugu_ekran" />
+        <action
+            android:id="@+id/action_anaMenu1_to_usersActivity"
+            app:destination="@id/usersActivity" />
+        <action
+            android:id="@+id/action_anaMenu1_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/anaMenu2"
+        android:name="com.kaan.firebasechat.AKRANIM.AnaMenu2"
+        android:label="fragment_ana_menu2"
+        tools:layout="@layout/fragment_ana_menu2" >
+        <action
+            android:id="@+id/action_anaMenu2_to_anaMenu3"
+            app:destination="@id/anaMenu3" />
+        <action
+            android:id="@+id/action_anaMenu2_to_yeditepeHarita"
+            app:destination="@id/yeditepeHarita" />
+        <action
+            android:id="@+id/action_anaMenu2_to_anaMenu1"
+            app:destination="@id/anaMenu1" />
+        <action
+            android:id="@+id/action_anaMenu2_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_anaMenu2_to_kulup_Testin_oldugu_ekran"
+            app:destination="@id/kulup_Testin_oldugu_ekran" />
+        <action
+            android:id="@+id/action_anaMenu2_to_usersActivity"
+            app:destination="@id/usersActivity" />
+        <action
+            android:id="@+id/action_anaMenu2_to_takvim"
+            app:destination="@id/takvim" />
+    </fragment>
+    <fragment
+        android:id="@+id/anaMenu3"
+        android:name="com.kaan.firebasechat.AKRANIM.AnaMenu3"
+        android:label="fragment_ana_menu3"
+        tools:layout="@layout/fragment_ana_menu3" >
+        <action
+            android:id="@+id/action_anaMenu3_to_anaMenu1"
+            app:destination="@id/anaMenu1" />
+        <action
+            android:id="@+id/action_anaMenu3_to_yeditepeHarita"
+            app:destination="@id/yeditepeHarita" />
+        <action
+            android:id="@+id/action_anaMenu3_to_anaMenu2"
+            app:destination="@id/anaMenu2" />
+        <action
+            android:id="@+id/action_anaMenu3_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_anaMenu3_to_kulup_Testin_oldugu_ekran"
+            app:destination="@id/kulup_Testin_oldugu_ekran" />
+        <action
+            android:id="@+id/action_anaMenu3_to_usersActivity"
+            app:destination="@id/usersActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/yeditepeHarita"
+        android:name="com.kaan.firebasechat.AKRANIM.YeditepeHarita"
+        android:label="fragment_yeditepe_harita"
+        tools:layout="@layout/fragment_yeditepe_harita" >
+        <action
+            android:id="@+id/action_yeditepeHarita_to_anaMenu1"
+            app:destination="@id/anaMenu1" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.kaan.firebasechat.AKRANIM.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_yeditepeHarita"
+            app:destination="@id/yeditepeHarita" />
+        <action
+            android:id="@+id/action_profileFragment_to_anaMenu1"
+            app:destination="@id/anaMenu1" />
+        <action
+            android:id="@+id/action_profileFragment_to_kulup_Testin_oldugu_ekran"
+            app:destination="@id/kulup_Testin_oldugu_ekran" />
+        <action
+            android:id="@+id/action_profileFragment_to_usersActivity"
+            app:destination="@id/usersActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/takvim"
+        android:name="com.kaan.firebasechat.AKRANIM.Takvim"
+        android:label="activity_takvim"
+        tools:layout="@layout/activity_takvim" />
+    <fragment
+        android:id="@+id/kulup_Testin_oldugu_ekran"
+        android:name="com.kaan.firebasechat.AKRANIM.Kulup_Testin_oldugu_ekran"
+        android:label="fragment_kulup__testin_oldugu_ekran"
+        tools:layout="@layout/fragment_kulup__testin_oldugu_ekran" >
+        <action
+            android:id="@+id/action_kulup_Testin_oldugu_ekran_to_bilisimkulubu"
+            app:destination="@id/bilisimkulubu" />
+        <action
+            android:id="@+id/action_kulup_Testin_oldugu_ekran_to_kulup1"
+            app:destination="@id/kulup1" />
+        <action
+            android:id="@+id/action_kulup_Testin_oldugu_ekran_to_kulup2"
+            app:destination="@id/kulup2" />
+        <action
+            android:id="@+id/action_kulup_Testin_oldugu_ekran_to_anaMenu1"
+            app:destination="@id/anaMenu1" />
+        <action
+            android:id="@+id/kulupAnket"
+            app:destination="@id/kulupTesti" />
+    </fragment>
+    <fragment
+        android:id="@+id/bilisimkulubu"
+        android:name="com.kaan.firebasechat.AKRANIM.bilisimkulubu"
+        android:label="fragment_bilisimkulubu"
+        tools:layout="@layout/fragment_bilisimkulubu" >
+        <action
+            android:id="@+id/action_bilisimkulubu_to_kulup_Testin_oldugu_ekran"
+            app:destination="@id/kulup_Testin_oldugu_ekran" />
+        <action
+            android:id="@+id/action_bilisimkulubu_to_kuluplerSonucEkrani"
+            app:destination="@id/kuluplerSonucEkrani" />
+        <action
+            android:id="@+id/action_bilisimkulubu_to_yeditepeHarita"
+            app:destination="@id/yeditepeHarita" />
+        <action
+            android:id="@+id/action_bilisimkulubu_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_bilisimkulubu_to_usersActivity"
+            app:destination="@id/usersActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/kulup1"
+        android:name="com.kaan.firebasechat.AKRANIM.Kulup1"
+        android:label="fragment_kulup1"
+        tools:layout="@layout/fragment_kulup1" >
+        <action
+            android:id="@+id/action_kulup1_to_kulup_Testin_oldugu_ekran"
+            app:destination="@id/kulup_Testin_oldugu_ekran" />
+        <action
+            android:id="@+id/action_kulup1_to_kuluplerSonucEkrani"
+            app:destination="@id/kuluplerSonucEkrani" />
+        <action
+            android:id="@+id/action_kulup1_to_kulup_Testin_oldugu_ekran2"
+            app:destination="@id/kulup_Testin_oldugu_ekran" />
+        <action
+            android:id="@+id/action_kulup1_to_yeditepeHarita"
+            app:destination="@id/yeditepeHarita" />
+        <action
+            android:id="@+id/action_kulup1_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_kulup1_to_usersActivity"
+            app:destination="@id/usersActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/kulup2"
+        android:name="com.kaan.firebasechat.AKRANIM.Kulup2"
+        android:label="fragment_kulup2"
+        tools:layout="@layout/fragment_kulup2" >
+        <action
+            android:id="@+id/action_kulup2_to_kulup_Testin_oldugu_ekran"
+            app:destination="@id/kulup_Testin_oldugu_ekran" />
+        <action
+            android:id="@+id/action_kulup2_to_kuluplerSonucEkrani4"
+            app:destination="@id/kuluplerSonucEkrani" />
+        <action
+            android:id="@+id/action_kulup2_to_yeditepeHarita"
+            app:destination="@id/yeditepeHarita" />
+        <action
+            android:id="@+id/action_kulup2_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_kulup2_to_usersActivity"
+            app:destination="@id/usersActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/kuluplerSonucEkrani"
+        android:name="com.kaan.firebasechat.AKRANIM.KuluplerSonucEkrani"
+        android:label="fragment_kulupler_sonuc_ekrani"
+        tools:layout="@layout/fragment_kulupler_sonuc_ekrani" >
+        <action
+            android:id="@+id/action_kuluplerSonucEkrani_to_kulup1"
+            app:destination="@id/kulup1" />
+        <action
+            android:id="@+id/action_kuluplerSonucEkrani_to_kulup2"
+            app:destination="@id/kulup2" />
+        <action
+            android:id="@+id/action_kuluplerSonucEkrani_to_kulup_Testin_oldugu_ekran"
+            app:destination="@id/kulup_Testin_oldugu_ekran" />
+        <action
+            android:id="@+id/action_kuluplerSonucEkrani_to_bilisimkulubu"
+            app:destination="@id/bilisimkulubu" />
+        <action
+            android:id="@+id/action_kuluplerSonucEkrani_to_usersActivity"
+            app:destination="@id/usersActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/usersActivity"
+        android:name="com.kaan.firebasechat.activity.UsersActivity"
+        android:label="UsersActivity" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.kaan.firebasechat.activity.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/kulupTesti"
+        android:name="com.kaan.firebasechat.AKRANIM.kulupTesti"
+        android:label="activity_kulup_testi"
+        tools:layout="@layout/activity_kulup_testi" />
+</navigation>
